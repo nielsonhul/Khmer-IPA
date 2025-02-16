@@ -1,0 +1,69 @@
+/* Import the Hanuman font for descriptions */
+/* Import the fonts */
+@import url('https://fonts.googleapis.com/css2?family=Hanuman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+
+body {
+  font-family: 'Doulos SIL', sans-serif;  /* or your preferred font */
+  text-align: center;
+  background-color: #9370DB; 
+  margin: 0;
+  padding: 20px;
+  color: #4b0082; /* dark indigo text for contrast */
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  color: solid gold; /* a rich purple for headings */
+}
+
+h1 {
+  color: solid gold; /* Royal purple title */
+}
+
+h2 {
+  color: #fff;
+  font-size: 1.5rem; /* Adjust the size as needed */
+  text-align: left;
+}
+
+.ipa-chart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-bottom: 2rem;
+}
+
+.phoneme {
+  width: 100px;  /* or a percentage, or another unit */
+  aspect-ratio: 1 / 1;
+  background-color: #fff; /* White background for contrast */
+  border: 5px solid gold; /* Gold borders */
+  border-radius: 4px;
+  margin: 0.5rem;
+  padding: 1.5rem;
+  font-size: 7.0rem;  /* Larger phoneme symbols */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100px;
+  text-align: center;
+  color: black; /* Phoneme text in black */
+}
+
+.phoneme:hover {
+  background-color: #f0e6d2; /* Slight background change on hover */
+}
+
+.description {
+  font-family: 'Noto Serif', serif; /* Use Hanuman for descriptions */
+  font-size: 2rem; /* Larger description text */
+  margin-top: 0.5rem;
+  color: gray; /* Description text in black */
+}
+  /* For elements marked with Khmer language */
+.description [lang="km"] {
+  font-family: 'Hanuman', serif;
+  font-size: 4rem;
+  color: gray;
+}
