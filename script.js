@@ -61,25 +61,25 @@ function displayPhonemes(phonemeArray, containerId) {
     span.classList.add('phoneme');
     span.textContent = phoneme.symbol;
 
-    // Optionally, you can add a description below the symbol
+    // Create a description element below the symbol
     const desc = document.createElement('div');
     desc.classList.add('description');
     desc.innerHTML = phoneme.description;
     span.appendChild(desc);
 
-    // Add a click event to play the corresponding audio file
-    span.addEventListener('click', () => {
-      // Construct the path to the audio file (ensure the audio folder and file names match)
-      const audio = new Audio(`audio/${phoneme.audio}`);
-      audio.play();
-    });
+    // Unified event handler for both click and touch events
+    const playAudio = (event) => {
+      // Prevent the touch event from triggering a subsequent click event
+      event.preventDefault();
 
-    // Add touch event for mobile
-span.addEventListener('touchstart', () => {
       // Construct the path to the audio file (ensure the audio folder and file names match)
       const audio = new Audio(`audio/${phoneme.audio}`);
       audio.play();
-    });
+    };
+
+    // Add both click and touchstart event listeners
+    span.addEventListener('click', playAudio);
+    span.addEventListener('touchstart', playAudio);
 
     // Append the span element to the container
     container.appendChild(span);
@@ -89,3 +89,4 @@ span.addEventListener('touchstart', () => {
 // Call the function for consonants and vowels
 displayPhonemes(consonants, 'consonants');
 displayPhonemes(vowels, 'vowels');
+
