@@ -74,6 +74,13 @@ function displayPhonemes(phonemeArray, containerId) {
       audio.play();
     });
 
+    // Add touch event for mobile
+span.addEventListener('touchstart', () => {
+      // Construct the path to the audio file (ensure the audio folder and file names match)
+      const audio = new Audio(`audio/${phoneme.audio}`);
+      audio.play();
+    });
+
     // Append the span element to the container
     container.appendChild(span);
   });
