@@ -2,51 +2,51 @@
 
 // Provided arrays for consonants and vowels
 const consonants = [
-  { symbol: "k", description: "<span lang='km'>ក<br>គ</span>", audio: "k.ogg" },
-  { symbol: "kʰ", description: "<span lang='km'>ខ<br>ឃ</span>", audio: "kh.ogg" },
-  { symbol: "ŋ", description: "<span lang='km'>ង</span>", audio: "ng.ogg" },
+  { symbol: "k", description: "<span lang='km'>ក<br>គ</span>", audio: "k.mp3" },
+  { symbol: "kʰ", description: "<span lang='km'>ខ<br>ឃ</span>", audio: "kh.mp3" },
+  { symbol: "ŋ", description: "<span lang='km'>ង</span>", audio: "ng.mp3" },
 
-  { symbol: "c", description: "<span lang='km'>ច<br>ជ</span>", audio: "c.ogg" },
-  { symbol: "cʰ", description: "<span lang='km'>ឆ<br>ឈ</span>", audio: "ch.ogg" },
-  { symbol: "ɲ", description: "<span lang='km'>ញ</span>", audio: "ny.ogg" },
+  { symbol: "c", description: "<span lang='km'>ច<br>ជ</span>", audio: "c.mp3" },
+  { symbol: "cʰ", description: "<span lang='km'>ឆ<br>ឈ</span>", audio: "ch.mp3" },
+  { symbol: "ɲ", description: "<span lang='km'>ញ</span>", audio: "ny.mp3" },
 
-  { symbol: "ɗ", description: "<span lang='km'>ដ<br>ឌ</span>", audio: "d.ogg" },
-  { symbol: "tʰ", description: "<span lang='km'>ថ<br>ធ</span>", audio: "th.ogg" },
-  { symbol: "t", description: "<span lang='km'>ត<br>ទ</span>", audio: "t.ogg" }, 
-  { symbol: "n", description: "<span lang='km'>ណ<br>ន</span>", audio: "n.ogg" },
+  { symbol: "ɗ", description: "<span lang='km'>ដ<br>ឌ</span>", audio: "d.mp3" },
+  { symbol: "tʰ", description: "<span lang='km'>ថ<br>ធ</span>", audio: "th.mp3" },
+  { symbol: "t", description: "<span lang='km'>ត<br>ទ</span>", audio: "t.mp3" }, 
+  { symbol: "n", description: "<span lang='km'>ណ<br>ន</span>", audio: "n.mp3" },
 
-  { symbol: "ɓ", description: "<span lang='km'>ប</span>", audio: "b.ogg" },
-  { symbol: "pʰ", description: "<span lang='km'>ផ<br>ភ</span>", audio: "ph.ogg" },
-  { symbol: "p", description: "<span lang='km'>ប៉<br>ព</span>", audio: "p.ogg" },
-  { symbol: "m", description: "<span lang='km'>ម</span>", audio: "m.ogg" },
+  { symbol: "ɓ", description: "<span lang='km'>ប</span>", audio: "b.mp3" },
+  { symbol: "pʰ", description: "<span lang='km'>ផ<br>ភ</span>", audio: "ph.mp3" },
+  { symbol: "p", description: "<span lang='km'>ប៉<br>ព</span>", audio: "p.mp3" },
+  { symbol: "m", description: "<span lang='km'>ម</span>", audio: "m.mp3" },
 
-  { symbol: "j", description: "<span lang='km'>យ</span>", audio: "j.ogg" },
-  { symbol: "r", description: "<span lang='km'>រ</span>", audio: "r.ogg" },
-  { symbol: "l", description: "<span lang='km'>ឡ<br>ល</span>", audio: "l.ogg"}, 
-  { symbol: "ʋ", description: "<span lang='km'>វ</span>", audio: "v.ogg" },
-  { symbol: "w", description: "<span lang='km'>វ</span>", audio: "w.ogg" },
-  { symbol: "s", description: "<span lang='km'>ស</span>", audio: "s.ogg" },
-  { symbol: "h", description: "<span lang='km'>ហ</span>", audio: "h.ogg" },
+  { symbol: "j", description: "<span lang='km'>យ</span>", audio: "j.mp3" },
+  { symbol: "r", description: "<span lang='km'>រ</span>", audio: "r.mp3" },
+  { symbol: "l", description: "<span lang='km'>ឡ<br>ល</span>", audio: "l.mp3"}, 
+  { symbol: "ʋ", description: "<span lang='km'>វ</span>", audio: "v.mp3" },
+  { symbol: "w", description: "<span lang='km'>វ</span>", audio: "w.mp3" },
+  { symbol: "s", description: "<span lang='km'>ស</span>", audio: "s.mp3" },
+  { symbol: "h", description: "<span lang='km'>ហ</span>", audio: "h.mp3" },
 
-  { symbol: "ʔ", description: "<span lang='km'>អ</span>", audio: "q.ogg" },
-  { symbol: "f", description: "<span lang='km'>ហ្វ</span>", audio: "f.ogg" }
+  { symbol: "ʔ", description: "<span lang='km'>អ</span>", audio: "q.mp3" },
+  { symbol: "f", description: "<span lang='km'>ហ្វ</span>", audio: "f.mp3" }
 ];
 
 const vowels = [
-  { symbol: "i", description: "'beat'", audio: "i.ogg" },
-  { symbol: "ɪ", description: "'bit'", audio: "ɪ.ogg" },
-  { symbol: "ɨ", description: "", audio: "ɨ.ogg" },
-  { symbol: "e", description: "'bait'", audio: "e.ogg" },
-  { symbol: "ɛ", description: "'bet'", audio: "ɛ.ogg" },
-  { symbol: "a", description: "'bat'", audio: "a.ogg" },
-  { symbol: "u", description: "'boot'", audio: "u.ogg" },
-  { symbol: "o", description: "'boat'", audio: "o.ogg" },
-  { symbol: "ɔ", description: "", audio: "ɔ.ogg" },
-  { symbol: "ʊ", description: "'hood'", audio: "ʊ.ogg" },
-  { symbol: "ə", description: "", audio: "ə.ogg" },
-  { symbol: "ʌ", description: "'butt'", audio: "ʌ.ogg" },
-  { symbol: "ɯ", description: "", audio: "ɯ.ogg" },
-  { symbol: "ɑ", description: "'bot'", audio: "ɑ.ogg" }
+  { symbol: "i", description: "'beat'", audio: "i.mp3" },
+  { symbol: "ɪ", description: "'bit'", audio: "ɪ.mp3" },
+  { symbol: "ɨ", description: "", audio: "ɨ.mp3" },
+  { symbol: "e", description: "'bait'", audio: "e.mp3" },
+  { symbol: "ɛ", description: "'bet'", audio: "ɛ.mp3" },
+  { symbol: "a", description: "'bat'", audio: "a.mp3" },
+  { symbol: "u", description: "'boot'", audio: "u.mp3" },
+  { symbol: "o", description: "'boat'", audio: "o.mp3" },
+  { symbol: "ɔ", description: "", audio: "ɔ.mp3" },
+  { symbol: "ʊ", description: "'hood'", audio: "ʊ.mp3" },
+  { symbol: "ə", description: "", audio: "ə.mp3" },
+  { symbol: "ʌ", description: "'butt'", audio: "ʌ.mp3" },
+  { symbol: "ɯ", description: "", audio: "ɯ.mp3" },
+  { symbol: "ɑ", description: "'bot'", audio: "ɑ.mp3" }
 ];
 
 // Function to create and display phoneme elements
