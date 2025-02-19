@@ -79,7 +79,7 @@ function displayPhonemes(phonemeArray, containerId) {
 
     // Add both click and touchstart event listeners
     span.addEventListener('click', playAudio);
-    span.addEventListener('touchstart', playAudio);
+    span.addEventListener('touchend', playAudio);
 
     // Append the span element to the container
     container.appendChild(span);
